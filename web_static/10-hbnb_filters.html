@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<HTML lang="en">
+    <HEAD>
+        <TITLE>HBNB</TITLE>
+        <link rel="stylesheet" href="/static/styles/3-footer.css">
+        <link rel="stylesheet" href="/static/styles/3-header.css">
+        <link rel="stylesheet" href="/static/styles/4-common.css">
+        <link rel="stylesheet" href="/static/styles/6-filters.css">
+    </HEAD>
+    <BODY>
+        <header class="full_width">
+            <nav class="nav">
+                <div class="full_width nav-links">
+                    <a href="/"><img class="logo" src="/static/images/logo.png"></a>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <section class="container">
+                <div class="container title-filters">
+                    <h1 class="title-filters">Places</h1>
+                </div>
+            </section>
+            <section class="container">
+                <div class="container title-filters">
+                    <h3 class="title-filters">States</h3>
+                    <div class="container">
+                        <input type="checkbox" class="state" name="state_id" value="">{{ state.id }} {{ state.name }}<br>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="container title-filters">
+                    <h3 class="title-filters">Cities</h3>
+                    <div class="container">
+                        <input type="checkbox" class="city" name="city_id" value="">{{ city.id }} {{ city.name }}<br>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="container title-filters">
+                    <h3 class="title-filters">Amenities</h3>
+                    <div class="container">
+                        <input type="checkbox" class="amenity" name="amenity_id" value="">{{ amenity.id }} {{ amenity.name }}<br>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="full_width">
+            <div class="full_width footer">
+                <p class="text_footer">Holberton School</p>
+            </div>
+        </footer>
+    </BODY>
+</HTML>
+
